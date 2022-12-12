@@ -11,27 +11,32 @@
     <button id="fortuneButton">Get a fortune</button>
     </div>
 
-    <h1>My Trip Itinerary</h1>
+    <h1>My Trip Itinerary Editor</h1>
     <div class="container">
       <div class="left">
-        <form id="form">
-        <label for="">Add an activity to your Itinerary</label>
+        <form  id="form">
+        Add an activity to your Itinerary
         <br>
-        <textarea name="" id="input" cols="40" rows="10"></textarea>
-        <br>
+        <input type="text" id="add" />
         <button type="submit">Submit</button>
    
-
+      </form>
+      <br/>
+      <form id="update-itinerary">
+        Itinerary ID:<input id ="itinerary-id" type="text">
+        New Item:<input id="new-item" type="text">
+        <button type="submit"> Update Itinerary</button>
       </form>
       </div>
-
+<br/>
       <div>
-        <button id="pastButton" type="submit" >Get Past Trip Itinierary</button>
+        <button id="pastButton" >Get Current Trip Itinerary</button>
       </div>
 
       <div class="right"></div>
-      <h3>Itinerary</h3>
-      <div id="posts"></div>
+      <h3>Current Itinerary</h3>
+      <div id = 'display-section'></div>
+      <!-- <div id="posts"></div>
         <div> 
           <p>Pet an elk </p>
           <span class="options">
@@ -45,7 +50,7 @@
         <i onClick="editPost(this)" class="fas fa-edit"></i>
         <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
       </span>
-      </div>
+      </div> -->
 
     </div>
 
